@@ -1,5 +1,6 @@
 import React from 'react'
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import Header from "./components/Header";
 import Home from "./screens/Home";
 import SignIn from "./screens/SignIn";
 import SignUp from "./screens/SignUp";
@@ -8,6 +9,7 @@ import Profile from './screens/Profile';
 export default function App() {
   return (
   <BrowserRouter>
+  <Header />
   <Routes>
     <Route path='/' element = {<Home/>}/>
     <Route path='/SignIn' element = {<SignIn />}/>
